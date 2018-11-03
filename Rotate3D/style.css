@@ -1,0 +1,47 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    background: lightblue;
+}
+.box {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) perspective(1000px) rotateY(-45deg);
+    transform-style: preserve-3d;
+    animation: anim 5s linear infinite;
+}
+.spin {
+    width: 200px;
+    height: 400px;
+    background: linear-gradient(white,gray,white);
+    position: absolute;
+    left: calc(50% - 100px);
+    top: calc(50% - 200px);
+    transform-style: preserve-3d;
+    border-radius: 20px;
+    
+}
+.spin:nth-child(1) {
+    transform: rotateX(0deg);
+}
+.spin:nth-child(2) {
+    transform:  rotateX(45deg);
+}
+.spin:nth-child(3) {
+    transform:  rotateX(-45deg);
+}
+.spin:nth-child(4) {
+    transform: rotateX(90deg);
+}
+@keyframes anim {
+    0% {
+        transform: translate(-50%,-50%) perspective(1000px) rotateY(-45deg) rotateX(0deg);
+    }
+    100% {
+        transform: translate(-50%,-50%) perspective(1000px) rotateY(-45deg) rotateX(360deg);
+    }
+}
+
