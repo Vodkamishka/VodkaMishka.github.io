@@ -1,0 +1,86 @@
+﻿html, body {
+    background: lightgreen;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+p {
+    position: absolute;
+    font-size: 150px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 0;
+    color: transparent;
+}
+.wrapper{
+    width: 50%;
+    height: 100%;
+    background: orange;
+    border-right: 2px solid black;
+    position: absolute;
+    overflow:hidden;
+}
+.wrapper>*{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    color:white;
+    animation: serfer 5s linear infinite;
+}
+.slide{
+    position:absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    overflow:hidden;
+}
+.slide>*{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    color: darkred;
+    animation: serf 5s linear infinite;
+}
+@keyframes serfer {
+    0% {
+        transform: translate(-50%,-50%);
+    }
+     40% {
+        transform: translate(-250%,-50%);
+    }
+     50% {
+        transform: translate(-250%,250%);
+    }
+     51% {
+        transform: translate(0%,250%);
+    }
+     90% {
+        transform: translate(0%,-50%);
+    }
+      100% {
+        transform: translate(-50%,-50%);
+    }
+}
+
+@keyframes serf {
+    0% {
+        transform: translate(-50%,-50%);
+    }
+     40% {
+        transform: translate(-250%,-50%);
+    }
+     50% {
+        transform: translate(-250%,250%);
+    }
+     51% {
+        transform: translate(100%,250%);
+    }
+     70% {
+        transform: translate(100%,-50%);
+    }
+      100% {
+        transform: translate(-50%,-50%);
+    }
+}
