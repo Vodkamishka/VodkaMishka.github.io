@@ -1,0 +1,47 @@
+﻿.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    width: 400px;
+    height: 100px;
+    
+    margin: 0;
+    
+}
+
+p {
+    font-size: 100px;
+    margin: 0; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: white;
+    mix-blend-mode: difference;
+   
+}
+
+.text::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: black;
+    transform: translate(-100%, 0%);
+    animation: anim 5s linear infinite;
+}
+
+@keyframes anim {
+    0% {
+        transform: translate(-100%, 0%);
+    }
+    50% {
+        transform: translate(150%, 0%);
+    }
+     100% {
+        transform: translate(-100%, 0%);
+    }
+}
