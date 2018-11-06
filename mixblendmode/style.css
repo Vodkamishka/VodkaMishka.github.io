@@ -1,47 +1,45 @@
-﻿.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   
-    width: 400px;
-    height: 100px;
-    
+body {
+    padding: 0;
     margin: 0;
-    
 }
-
-p {
-    font-size: 100px;
-    margin: 0; 
+.text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    width: 1050px;
+    height: 100px;
     white-space: nowrap;
+    background: white;
+}
+span {
+    font-size: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     color: white;
     mix-blend-mode: difference;
-   
 }
-
 .text::before {
-    content: "";
-    display: block;
+    content:"";
     width: 200px;
     height: 100px;
     background: black;
-    transform: translate(-100%, 0%);
-    animation: anim 5s linear infinite;
+    display:block;
+    position: absolute;
+    transform: translate(-105%,0);
+    animation: anim 10s linear infinite;
 }
 
 @keyframes anim {
     0% {
-        transform: translate(-100%, 0%);
+      transform: translate(-105%,0);  
     }
     50% {
-        transform: translate(150%, 0%);
+      transform: translate(540%,0);  
     }
-     100% {
-        transform: translate(-100%, 0%);
+    100% {
+      transform: translate(-105%,0);  
     }
 }
