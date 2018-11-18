@@ -28,11 +28,11 @@ button {
     position: absolute;
     top: 80%;
     left: 5%;
-
 }
 
 .character {
     position: absolute;
     z-index: -2;
     left: 0;
+    display:none; 
 }

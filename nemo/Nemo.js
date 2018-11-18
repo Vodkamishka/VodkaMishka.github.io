@@ -31,6 +31,8 @@ function appearanceFish() {
       
      fish[randomNumber].style.zIndex = "3"; // Случайному элементу из массива с морскими обитателями присваивается свойство видимости 3 (изначально у всех присвоено -1,чтобы не отображаться в браузере);
     
+     fish[randomNumber].style.display = "block"; // Меняем свойство появившегося персонажа с none на block;
+    
     var clientWidth = document.documentElement.clientWidth; // Ширина экрана;
     
     var fishWidth = "745"; // Ширина самой широкой картинки;
