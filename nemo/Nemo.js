@@ -16,6 +16,7 @@ var fish =[document.getElementById('character1'),
            document.getElementById('character13')
 ]
 
+
 /*Функция перезагрузки страницы*/
 
 function reload() {
@@ -30,7 +31,11 @@ function appearanceFish() {
       
      fish[randomNumber].style.zIndex = "3"; // Случайному элементу из массива с морскими обитателями присваивается свойство видимости 3 (изначально у всех присвоено -1,чтобы не отображаться в браузере);
     
-     var randomLeft = Math.floor(Math.random()*1000); // В переменную записывается случайное положение на экране по ширине 1000px (не смог найти функцию для определения ширины устройства, поэтому взял усредненное значение 1000)ж
+    var clientWidth = document.documentElement.clientWidth; // Ширина экрана;
+    
+    var fishWidth = "745"; // Ширина самой широкой картинки;
+    
+     var randomLeft = Math.floor(Math.random()*(clientWidth-fishWidth)); // В переменную записывается случайное положение на экране по ширине 1000px (не смог найти функцию для определения ширины устройства, поэтому взял усредненное значение 1000)ж
     
     fish[randomNumber].style.left = randomLeft + "px"; // Морской обитатель появляется в случаной месте на экране;
 
@@ -39,6 +44,5 @@ function appearanceFish() {
 /*Запуск функции появления морского обитателя*/
 
 appearanceFish();
-
 
 

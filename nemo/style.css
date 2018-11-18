@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.nemobg {
+#nemobg {
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -34,4 +34,5 @@ button {
 .character {
     position: absolute;
     z-index: -2;
+    left: 0;
 }
