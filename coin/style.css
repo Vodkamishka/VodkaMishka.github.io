@@ -1,0 +1,156 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: black;
+}
+
+#aplication {
+    position: absolute;
+    left: 50%;
+    width: 1440px;
+    height: 100vh;
+    box-sizing: border-box;
+    transform: translate(-50%, 0);
+}
+
+#header {
+    width: 1440px;
+    height: 30vh;
+    box-sizing: border-box;
+    background: silver;
+    position: fixed;
+    top: 0;
+}
+
+#main {
+    width: 1440px;
+    height: 70vh;
+    box-sizing: border-box;
+    background: silver;
+    position: fixed;
+    top: 30%;
+}
+
+#container {
+    position: absolute;
+    left: 30px;
+}
+
+button {
+    width: 85px;
+    height: 80px;
+    border: 4px white solid;
+    border-radius: 50%;
+    margin: 20px 10px 10px 10px;
+    box-shadow: 2px 2px 4px black;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+
+.block1 {
+    width: 30%;
+    height: 100%;
+    background: silver;
+    box-sizing: border-box;
+}
+
+.block1 h3 {
+    background: silver;
+    padding: 20px 20px 0px 20px;
+}
+
+#givenLetter {
+    box-sizing: border-box;
+    width: 380px;
+    height: 80px;
+    background: white;
+    margin: 10px 20px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 60px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.block2 {
+    box-sizing: border-box;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    left: 30%;
+    top: 0;
+    width: 40%;
+}
+
+#mistake {
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#result {
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#quentity {
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.block2 h3 {
+    padding: 5px;
+}
+
+div#result,
+div#quentity,
+div#mistake {
+    width: 560px;
+    height: 40px;
+    background: white;
+    margin: 0px 5px 0px 5px;
+    border-radius: 10px;
+}
+
+.block3 {
+    box-sizing: border-box;
+    width: 30%;
+    background: silver;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+audio {
+    margin: 20px 10px 10px 20px;
+    width: 380px;
+}
+
+.block3 h3 {
+    width: 380px;
+    height: 30px;
+    padding: 10px 10px 10px 70px;
+}
+
+#timer {
+    box-sizing: border-box;
+    width: 380px;
+    height: 120px;
+    background: white;
+    margin: 5px 30px;
+    text-align: center;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 90px;
+    font-weight: bold;
+}
