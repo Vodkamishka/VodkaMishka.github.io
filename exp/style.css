@@ -3,17 +3,19 @@
     padding: 0;
 }
 
+body {
+    background: black;
+}
+
 #cube {
     position: relative;
-    transform-origin: 50% 50% -240px;
+    transform-origin: 50% 50% -50vw;
     transform-style: preserve-3d;
     transform: perspective(20000px);
     transition: all ease 3s;
      box-sizing: border-box;
-    height: 300px;
-    width: 480px;
-    top: 400px;
-    left: 500px;
+    height: 100vh;
+    width: 100vw;
     
 }
 
@@ -23,67 +25,54 @@
     border: 10px black solid;
     box-sizing: border-box;
     transform-style: preserve-3d;
-    transform-origin: 50% 50% -240px;
+    transform-origin: 50% 50% -50vw;
     text-align: center;
-    line-height: 480px;
+    line-height: 100vh;
     font-size: 80px;
     font-weight: 600;
     opacity: 1;
-     height: 300px;
-    width: 480px;
+     height: 100vh;
+    width: 100vw;
   
 }
 #side1 {
     background: red;
-    
+   
     
 }
 
-#side5 {
+#side2 {
     background: green;
     transform: rotate3d(1,0,0,90deg);
-     height: 480px;
-    
-   
-    
-    
-    
-    
-    
-}
-
-#side6 {
-    background: purple;
-    transform: rotate3d(1,0,0,-270deg); height: 480px;
-    
-     
-   
-    
-     
-   
-    
-    
+   height: 100vw;
     
     
     
 }
 
 #side3 {
-    background: yellow;
-    transform: rotate3d(0,1,0,180deg);
-   
-}
-
-#side2 {
-    background: blue;
-    transform: rotate3d(0,1,0,90deg);
-}
+    background: purple;
+    transform: rotate3d(1,0,0,-90deg);
+    height: 100vw;
     
+    
+}
 
 #side4 {
+    background: yellow;
+    transform: rotate3d(0,1,0,180deg);
+    
+}
+
+#side5 {
+    background: blue;
+    transform: rotate3d(0,1,0,90deg);
+    
+}
+
+#side6 {
     background: pink;
     transform: rotate3d(0,1,0,-90deg);
-    
     
 }
 
