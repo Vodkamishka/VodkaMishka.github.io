@@ -19,3 +19,5 @@ $("li:nth-child(5)").on("click",function(){window.location = "../index.html#next
 
 $("li:nth-child(6)").on("click",function(){window.location = "../index.html#next4"});
 
+
+
