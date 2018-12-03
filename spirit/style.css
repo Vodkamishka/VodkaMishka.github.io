@@ -10,9 +10,7 @@ body {
 
 .side1 {
     width: 100vw;
-    height: 500vh;
-    
-    
+    height: 500vh;   
 }
 .footage {
     min-width: 100vw;
@@ -116,7 +114,6 @@ li:hover{
     width: 200px;
     border-radius: 5px;
     font-family: Avenir,'Helvetica Neue',Helvetica,Arial,sans-serif;
-    
 }
 
 .button:hover {
@@ -129,8 +126,6 @@ li:hover{
 #next4 {
     background: linear-gradient(0,#283c86,#45a247);
     height: 920px;
-    
-    
 }
 
 #block {
@@ -242,7 +237,7 @@ h1 {
     
 }
 
-#loader {
+#loader, #loader1, #loader2, #loader3, #loader4 {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -253,6 +248,22 @@ h1 {
     border: 16px white solid;
     border-top: 16px blueviolet solid;
     animation: anim 2s linear infinite;
+}
+
+#loader1 {
+    border-top: 16px lime solid;
+}
+
+#loader2 {
+    border-top: 16px orange solid;
+}
+
+#loader3 {
+    border-top: 16px MAGENTA solid;
+}
+
+#loader4 {
+    border-top: 16px cyan solid;
 }
 
 @keyframes anim {
