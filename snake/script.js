@@ -42,8 +42,6 @@ const query = (arg) => {
   return document.querySelector(arg);
 }
 
-query(`[posX = '1'][posY = '1']`).classList.add('snake');
-
 let coordinates = generateSnake();
 let snakeBody = [query(`[posX = '${coordinates[0]}'][posY = '${coordinates[1]}']`),
     query(`[posX = '${coordinates[0]-1}'][posY = '${coordinates[1]}']`),
