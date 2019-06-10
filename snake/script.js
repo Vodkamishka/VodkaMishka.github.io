@@ -157,6 +157,10 @@ const move = () => {
     for (let i = 0; i < snakeBody.length; i++) {
         snakeBody[i].classList.add('snakeBody');
     }
+   
+  steps = true;
+    
+}
 
 let interval = setInterval(move, 300); 
 
