@@ -158,9 +158,6 @@ const move = () => {
         snakeBody[i].classList.add('snakeBody');
     }
 
-    steps = true;
-}
-
 let interval = setInterval(move, 300); 
 
 /*Задаем нажатия клавиш и направления с ними связанные*/
