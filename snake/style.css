@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     background: lightskyblue;
+    opacity: 0.9;
 }
 
 .excel {
