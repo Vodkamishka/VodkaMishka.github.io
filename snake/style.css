@@ -4,7 +4,8 @@
 
 body {
     margin: 100px;
-    background: black;
+    background: url(background.jpg) no-repeat;
+    background-size: cover;
 }
 
 .field {
