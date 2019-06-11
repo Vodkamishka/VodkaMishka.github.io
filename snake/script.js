@@ -84,6 +84,7 @@ margin-top: 40px;
 font-size: 1.5rem;
 font-weight: bold;
 width: 230px;
+color: white;
 `
 let score = 0;
 div.innerHTML = `Ваши очки: ${score}`;
